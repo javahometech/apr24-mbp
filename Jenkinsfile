@@ -17,7 +17,7 @@ pipeline {
         echo "Deploy to deve environment"
       }
     }
-    stage("Dev Test"){
+    stage("Test Deploy"){
       when {
         branch 'test'
       }
@@ -25,7 +25,7 @@ pipeline {
         echo "Deploy to test environment"
       }
     }
-    stage("Dev Production"){
+    stage("Prod Deploy"){
       when {
         branch 'main'
       }
